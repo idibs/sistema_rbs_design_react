@@ -12,31 +12,31 @@ import Entrega from "./pages/Entrega"
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/sistema_rbs_design_react",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />
       },
       {
-        path: "/estoque",
+        path: "estoque",
         element: <HomeEst />
       },
       {
-        path: "/funcionario",
+        path: "funcionario",
         element: <HomeFunc />
       },
       {
-        path: "/pagamento",
+        path: "pagamento",
         element: <Pagamento />
       },
       {
-        path: "/pedido",
+        path: "pedido",
         element: <Pedido />
       },
       {
-        path: "/entrega",
+        path: "entrega",
         element: <Entrega />
       }
     ]

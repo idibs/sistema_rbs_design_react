@@ -4,14 +4,16 @@ import { FaCartShopping, FaMoneyCheckDollar } from "react-icons/fa6"
 import Button from "./ButtonNav.jsx"
 
 export default function Navbar(){
+    let url = "/sistema_rbs_design_react"
+
     return(
             <div className="fixed w-24 text-center text-white bg-[#06630b] h-full flex flex-col">
-                <Button icon={<FaHome />} text={"Home"} link={"/"}/>
-                <Button icon={<FaBoxes />} text={"Estoque"} link={"/estoque"}/>
-                <Button icon={<IoPerson />} text={"Funcionários"} link={"/funcionario"}/>
-                <Button icon={<FaMoneyCheckDollar />} text={"Pagamentos"} link={"/pagamento"}/>
-                <Button icon={<FaCartShopping />} text={"Pedidos"} link={"/pedido"}/>
-                <Button icon={<FaTruck />} text={"Entregas"} link={"/entrega"}/>       
+                <Button icon={<FaHome />} text={"Home"} link={url + "/"}/>
+                <Button icon={<FaBoxes />} text={"Estoque"} link={url + "/estoque"}/>
+                <Button icon={<IoPerson />} text={"Funcionários"} link={url + "/funcionario"}/>
+                <Button icon={<FaMoneyCheckDollar />} text={"Pagamentos"} link={url + "/pagamento"}/>
+                <Button icon={<FaCartShopping />} text={"Pedidos"} link={url + "/pedido"}/>
+                <Button icon={<FaTruck />} text={"Entregas"} link={url + "/entrega"}/>       
             </div>
     )
 }
